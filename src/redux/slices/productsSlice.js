@@ -9,7 +9,7 @@ const initialState = {
       name: "Ahşap Kitaplık",
       price: 2500,
       image: "/src/images/ahsapkitaplık.jpg",
-      description: "El yapımı ceviz ağacından üretilmiş şık masa",
+      description: "El yapımı ahşap kitaplık (Fiyatlar ölçüye ve kullanılacak isteğe bağlı boyaya göre değişim gösterebilir).",
       category: "Mobilya",
       stock: 10
     },
@@ -18,7 +18,7 @@ const initialState = {
       name: "Çok Amaçlı Ahşap Dolap",
       price: 850,
       image: "/src/images/cokamaclıahsapdolap.jpg",
-      description: "Rahat ve dayanıklı ahşap sandalye",
+      description: "İstediğiniz her yerde kullanabileceğiniz ahşap aynalı dolap (Ayna boyutu ve genel ölçülere göre fiyatta değişiklik gösterilebilir).",
       category: "Mobilya",
       stock: 15
     },
@@ -27,7 +27,7 @@ const initialState = {
       name: "Ahşap Şifonyer",
       price: 3200,
       image: "/src/images/cokamaclıdolap.jpg",
-      description: "5 katlı ahşap kitaplık",
+      description: "Ahşap şifonyer (İsteğe bağlı olarak raf eklenip çıkartılabilir ölçüye göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
       stock: 8
     },
@@ -36,7 +36,7 @@ const initialState = {
       name: "Gömmeli Yatak Odası Dolabı",
       price: 150,
       image: "/src/images/gömmeliyatakodasıdolabı.jpg",
-      description: "El yapımı dekoratif ahşap kutu",
+      description: "Gömmeli yatak odası dolabı(Ölçüye, kullanılacak malzemeye ve boyaya göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
       stock: 25
     },
@@ -45,7 +45,7 @@ const initialState = {
       name: "Kitaplık",
       price: 75,
       image: "/src/images/kitaplık.jpg",
-      description: "Doğal ahşap çerçeve",
+      description: "Ahşap kitaplık (İsteğe göre raf eklenip çıkartılabilir ölçüye göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
       stock: 30
     },
@@ -54,7 +54,7 @@ const initialState = {
       name: "Mini Bar",
       price: 120,
       image: "/src/images/minibar.jpg",
-      description: "El yapımı ahşap servis tabağı",
+      description: "El yapımı ahşap mini bar( Boyaya ve ölçüye göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
       stock: 20
     },
@@ -63,7 +63,7 @@ const initialState = {
       name: "Mini Kitaplık",
       price: 2500,
       image: "/src/images/minikitaplık.jpg",
-      description: "El yapımı ceviz ağacından üretilmiş şık masa",
+      description: "El yapımı mini kitaplık (İsteğe göre raf eklenip çıkartılabilir ölçüye göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
       stock: 10
     },
@@ -72,7 +72,7 @@ const initialState = {
       name: "Mutfak Dolabı Ve Masası",
       price: 850,
       image: "/src/images/mutfakdolabivemasasi.jpg",
-      description: "Rahat ve dayanıklı ahşap sandalye",
+      description: "Mutfak dolabı ve mutfak masası seti (İsteğe göre ürünleri ayrı ayrı sipariş edebilirsiniz fiyatlar ölçülere göre değişiklik gösterebilir).",
       category: "Mobilya",
       stock: 15
     },
@@ -81,7 +81,7 @@ const initialState = {
       name: "Mutfak Dolabı",
       price: 3200,
       image: "/src/images/mutfakdolabı.jpg",
-      description: "5 katlı ahşap kitaplık",
+      description: "Tamamen el emeği mutfak dolabı( Ölçülere göre fiyatlar değişiklik gösterebilir).",
       category: "Mobilya",
       stock: 8
     },
@@ -90,7 +90,7 @@ const initialState = {
       name: "Tamamı Ahşap Bungalow",
       price: 150,
       image: "/src/images/tamamıahsapbungalow.jpg",
-      description: "El yapımı dekoratif ahşap kutu",
+      description: "El yapımı tamamı ahşap bungalow ( Oda sayısına ve metrekareye göre fiyat değişiklik gösterebilir).",
       category: "Yaşam",
       stock: 25
     },
@@ -99,7 +99,7 @@ const initialState = {
       name: "Tv Ünitesi",
       price: 75,
       image: "/src/images/tvünitesi.jpg",
-      description: "Doğal ahşap çerçeve",
+      description: "El yapımı tv ünitesi ( Ölçüye ve istenilen boyaya göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
       stock: 30
     },
@@ -108,7 +108,7 @@ const initialState = {
       name: "Yatak Odası Takımı",
       price: 120,
       image: "/src/images/yatakodasıtakımı.jpg",
-      description: "El yapımı ahşap servis tabağı",
+      description: "El yapımı işçilik yatak odası takımı (İsteğe göre ürünleri ayrı ayrı sipariş edebilirsiniz ölçülere göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
       stock: 20
     }
