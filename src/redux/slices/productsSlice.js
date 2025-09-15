@@ -7,7 +7,7 @@ const initialState = {
     {
       id: 1,
       name: "Ahşap Kitaplık",
-      price: 2500,
+      price: 35000,
       image: "/src/images/ahsapkitaplık.jpg",
       description: "El yapımı ahşap kitaplık (Fiyatlar ölçüye ve kullanılacak isteğe bağlı boyaya göre değişim gösterebilir).",
       category: "Mobilya",
@@ -16,7 +16,7 @@ const initialState = {
     {
       id: 2,
       name: "Çok Amaçlı Ahşap Dolap",
-      price: 850,
+      price: 70000,
       image: "/src/images/cokamaclıahsapdolap.jpg",
       description: "İstediğiniz her yerde kullanabileceğiniz ahşap aynalı dolap (Ayna boyutu ve genel ölçülere göre fiyatta değişiklik gösterilebilir).",
       category: "Mobilya",
@@ -25,7 +25,7 @@ const initialState = {
     {
       id: 3,
       name: "Ahşap Şifonyer",
-      price: 3200,
+      price: 8000,
       image: "/src/images/cokamaclıdolap.jpg",
       description: "Ahşap şifonyer (İsteğe bağlı olarak raf eklenip çıkartılabilir ölçüye göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
@@ -34,7 +34,7 @@ const initialState = {
     {
       id: 4,
       name: "Gömmeli Yatak Odası Dolabı",
-      price: 150,
+      price: 35000,
       image: "/src/images/gömmeliyatakodasıdolabı.jpg",
       description: "Gömmeli yatak odası dolabı(Ölçüye, kullanılacak malzemeye ve boyaya göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
@@ -43,7 +43,7 @@ const initialState = {
     {
       id: 5,
       name: "Kitaplık",
-      price: 75,
+      price: 20000,
       image: "/src/images/kitaplık.jpg",
       description: "Ahşap kitaplık (İsteğe göre raf eklenip çıkartılabilir ölçüye göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
@@ -52,7 +52,7 @@ const initialState = {
     {
       id: 6,
       name: "Mini Bar",
-      price: 120,
+      price: 30000,
       image: "/src/images/minibar.jpg",
       description: "El yapımı ahşap mini bar( Boyaya ve ölçüye göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
@@ -61,7 +61,7 @@ const initialState = {
      {
       id: 7,
       name: "Mini Kitaplık",
-      price: 2500,
+      price:12000,
       image: "/src/images/minikitaplık.jpg",
       description: "El yapımı mini kitaplık (İsteğe göre raf eklenip çıkartılabilir ölçüye göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
@@ -70,7 +70,7 @@ const initialState = {
     {
       id: 8,
       name: "Mutfak Dolabı Ve Masası",
-      price: 850,
+      price: 85000,
       image: "/src/images/mutfakdolabivemasasi.jpg",
       description: "Mutfak dolabı ve mutfak masası seti (İsteğe göre ürünleri ayrı ayrı sipariş edebilirsiniz fiyatlar ölçülere göre değişiklik gösterebilir).",
       category: "Mobilya",
@@ -79,7 +79,7 @@ const initialState = {
     {
       id: 9,
       name: "Mutfak Dolabı",
-      price: 3200,
+      price: 65000,
       image: "/src/images/mutfakdolabı.jpg",
       description: "Tamamen el emeği mutfak dolabı( Ölçülere göre fiyatlar değişiklik gösterebilir).",
       category: "Mobilya",
@@ -88,7 +88,7 @@ const initialState = {
     {
       id: 10,
       name: "Tamamı Ahşap Bungalow",
-      price: 150,
+      price: 1500000,
       image: "/src/images/tamamıahsapbungalow.jpg",
       description: "El yapımı tamamı ahşap bungalow ( Oda sayısına ve metrekareye göre fiyat değişiklik gösterebilir).",
       category: "Yaşam",
@@ -97,7 +97,7 @@ const initialState = {
     {
       id: 11,
       name: "Tv Ünitesi",
-      price: 75,
+      price: 65000,
       image: "/src/images/tvünitesi.jpg",
       description: "El yapımı tv ünitesi ( Ölçüye ve istenilen boyaya göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
@@ -106,7 +106,7 @@ const initialState = {
     {
       id: 12,
       name: "Yatak Odası Takımı",
-      price: 120,
+      price: 100000,
       image: "/src/images/yatakodasıtakımı.jpg",
       description: "El yapımı işçilik yatak odası takımı (İsteğe göre ürünleri ayrı ayrı sipariş edebilirsiniz ölçülere göre fiyat değişiklik gösterebilir).",
       category: "Mobilya",
