@@ -1,0 +1,145 @@
+
+
+import { createSlice } from '@reduxjs/toolkit'
+
+const initialState = {
+  products: [
+    {
+      id: 1,
+      name: "Ahşap Kitaplık",
+      price: 2500,
+      image: "/src/images/ahsapkitaplık.jpg",
+      description: "El yapımı ceviz ağacından üretilmiş şık masa",
+      category: "Mobilya",
+      stock: 10
+    },
+    {
+      id: 2,
+      name: "Çok Amaçlı Ahşap Dolap",
+      price: 850,
+      image: "/src/images/cokamaclıahsapdolap.jpg",
+      description: "Rahat ve dayanıklı ahşap sandalye",
+      category: "Mobilya",
+      stock: 15
+    },
+    {
+      id: 3,
+      name: "Ahşap Şifonyer",
+      price: 3200,
+      image: "/src/images/cokamaclıdolap.jpg",
+      description: "5 katlı ahşap kitaplık",
+      category: "Mobilya",
+      stock: 8
+    },
+    {
+      id: 4,
+      name: "Gömmeli Yatak Odası Dolabı",
+      price: 150,
+      image: "/src/images/gömmeliyatakodasıdolabı.jpg",
+      description: "El yapımı dekoratif ahşap kutu",
+      category: "Mobilya",
+      stock: 25
+    },
+    {
+      id: 5,
+      name: "Kitaplık",
+      price: 75,
+      image: "/src/images/kitaplık.jpg",
+      description: "Doğal ahşap çerçeve",
+      category: "Mobilya",
+      stock: 30
+    },
+    {
+      id: 6,
+      name: "Mini Bar",
+      price: 120,
+      image: "/src/images/minibar.jpg",
+      description: "El yapımı ahşap servis tabağı",
+      category: "Mobilya",
+      stock: 20
+    },
+     {
+      id: 7,
+      name: "Mini Kitaplık",
+      price: 2500,
+      image: "/src/images/minikitaplık.jpg",
+      description: "El yapımı ceviz ağacından üretilmiş şık masa",
+      category: "Mobilya",
+      stock: 10
+    },
+    {
+      id: 8,
+      name: "Mutfak Dolabı Ve Masası",
+      price: 850,
+      image: "/src/images/mutfakdolabivemasasi.jpg",
+      description: "Rahat ve dayanıklı ahşap sandalye",
+      category: "Mobilya",
+      stock: 15
+    },
+    {
+      id: 9,
+      name: "Mutfak Dolabı",
+      price: 3200,
+      image: "/src/images/mutfakdolabı.jpg",
+      description: "5 katlı ahşap kitaplık",
+      category: "Mobilya",
+      stock: 8
+    },
+    {
+      id: 10,
+      name: "Tamamı Ahşap Bungalow",
+      price: 150,
+      image: "/src/images/tamamıahsapbungalow.jpg",
+      description: "El yapımı dekoratif ahşap kutu",
+      category: "Yaşam",
+      stock: 25
+    },
+    {
+      id: 11,
+      name: "Tv Ünitesi",
+      price: 75,
+      image: "/src/images/tvünitesi.jpg",
+      description: "Doğal ahşap çerçeve",
+      category: "Mobilya",
+      stock: 30
+    },
+    {
+      id: 12,
+      name: "Yatak Odası Takımı",
+      price: 120,
+      image: "/src/images/yatakodasıtakımı.jpg",
+      description: "El yapımı ahşap servis tabağı",
+      category: "Mobilya",
+      stock: 20
+    }
+  ],
+  searchTerm: ''
+}
+
+const productsSlice = createSlice({
+  name: 'products',
+  initialState,
+  reducers: {
+    setSearchTerm: (state, action) => {
+      state.searchTerm = action.payload
+    },
+  }
+})
+
+export const { setSearchTerm } = productsSlice.actions
+
+// Selectors
+export const selectProducts = (state) => state.products.products
+export const selectSearchTerm = (state) => state.products.searchTerm
+export const selectFilteredProducts = (state) => {
+  const { products, searchTerm } = state.products
+  if (!searchTerm.trim()) return products
+  
+  return products.filter(product =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    product.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    product.category.toLowerCase().includes(searchTerm.toLowerCase())
+  )
+}
+
+export default productsSlice.reducer

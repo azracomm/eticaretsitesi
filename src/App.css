@@ -1,0 +1,268 @@
+:root {
+  /* Ana Renkler */
+  --primary-color: #8B4513;
+  --primary-hover: #654321;
+  --secondary-color: #DEB887;
+  --light-bg: #f5f7fa;
+  --dark-bg: #c3cfe2;
+  
+  /* Metin Renkleri */
+  --text-primary: #333;
+  --text-secondary: #666;
+  --text-light: #999;
+  
+  /* Arka Plan Renkleri */
+  --bg-white: #ffffff;
+  --bg-light: #f8f9fa;
+  --bg-gray: #e9ecef;
+  
+  /* Gölge Renkleri */
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+  --shadow-primary: rgba(139, 69, 19, 0.1);
+  
+  /* Boyutlar */
+  --border-radius: 8px;
+  --border-radius-lg: 15px;
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--light-bg) 0%, var(--dark-bg) 100%);
+  transition: var(--transition);
+}
+
+/* App Container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Container */
+.header-container {
+  width: 100%;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.light-theme {
+  background: linear-gradient(135deg, var(--light-bg) 0%, var(--dark-bg) 100%) !important;
+  color: var(--primary-color) !important;
+}
+
+.light-theme .product-card {
+  background: var(--bg-white);
+  color: var(--primary-color);
+  border-color: var(--secondary-color);
+}
+
+.light-theme .cart-dropdown {
+  background: var(--bg-white);
+  color: var(--primary-color);
+  border-color: var(--secondary-color);
+}
+
+.light-theme .cart-header {
+  background: var(--bg-light);
+  border-color: var(--secondary-color);
+}
+
+.light-theme .cart-footer {
+  background: var(--bg-light);
+  border-color: var(--secondary-color);
+}
+
+.light-theme .product-detail {
+  color: var(--primary-color);
+}
+
+.light-theme .product-detail-name,
+.light-theme .product-name {
+  color: var(--primary-color);
+}
+
+.light-theme .product-description,
+.light-theme .product-detail-description {
+  color: #5D4037;
+}
+
+.light-theme .product-price,
+.light-theme .product-detail-price {
+  color: #A0522D;
+}
+
+.light-theme .product-category,
+.light-theme .product-detail-category {
+  color: var(--primary-color);
+}
+
+.light-theme .section-title {
+  color: var(--primary-color);
+}
+
+.dark-theme {
+  background: linear-gradient(135deg, #BC9A6A 0%, #CD853F 100%) !important;
+  color: #2F1B14 !important;
+}
+
+
+.dark-theme .product-card {
+  background: #F4E4BC;
+  color: #2F1B14;
+  border-color: #D2B48C;
+}
+
+.dark-theme .cart-dropdown {
+  background: #F4E4BC;
+  color: #2F1B14;
+  border-color: #D2B48C;
+}
+
+.dark-theme .cart-header {
+  background: #D2B48C;
+  border-color: #BC9A6A;
+}
+
+.dark-theme .cart-footer {
+  background: #D2B48C;
+  border-color: #BC9A6A;
+}
+
+.dark-theme .product-detail {
+  color: #2F1B14;
+}
+
+.dark-theme .product-detail-name,
+.dark-theme .product-name {
+  color: #2F1B14;
+}
+
+.dark-theme .product-description,
+.dark-theme .product-detail-description {
+  color: #5D4037;
+}
+
+.dark-theme .product-price,
+.dark-theme .product-detail-price {
+  color: #8B4513;
+}
+
+.dark-theme .product-category,
+.dark-theme .product-detail-category {
+  color: #A0522D;
+}
+
+.dark-theme .section-title {
+  color: #2F1B14;
+}
+
+/* Genel buton stilleri */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 69, 19, 0.6);
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 69, 19, 0.8);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 69, 19, 0.6) rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .header-content {
+    padding: 12px 15px;
+  }
+  
+  .main-content {
+    padding: 15px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    padding: 10px 12px;
+  }
+  
+  .main-content {
+    padding: 10px;
+  }
+}
